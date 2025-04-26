@@ -15,7 +15,7 @@ import isAdmin from '../middlewares/isAdmin.js';
 
 const router = express.Router();
 
-router.post('/', uploadProduct.single('images'), addProduct);
+router.post('/', isAdmin, uploadProduct.single('images'), addProduct);
 
 router.get('/', getAllProducts);
 
@@ -25,7 +25,7 @@ router.get('/:id', getProductById);
 
 router.patch('/:id', isAdmin, uploadProduct.single('images'), editProduct);
 
-router.patch('/inventory/:product_id/:color_id/:age_range_id', decreaseQuantity)
+router.patch('/inventory/:product_id/:color_id/:age_range_id', isAdmin, decreaseQuantity)
 
 router.delete('/:id', isAdmin, deleteProduct);
 
