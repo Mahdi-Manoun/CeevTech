@@ -1,0 +1,24 @@
+# Node.js dependencies
+node_modules/*
+
+# Environment variables
+.env
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# images
+
+public/uploads/workshop/*
+public/uploads/coffee/*
+public/uploads/course/*
+public/uploads/item/*
+public/uploads/accessory/*
+public/uploads/grinder/*
+public/uploads/teammate/*
+!public/uploads/teammate/default/
+!public/uploads/teammate/default/**
+
+# Others
+npm
