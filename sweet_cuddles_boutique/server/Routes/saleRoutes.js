@@ -8,4 +8,5 @@ router.post('/', createSale);
 
 // router.get('/', isAdmin, getAllSales);
 
+
 export default router;

@@ -29,4 +29,5 @@ router.patch('/inventory/:product_id/:color_id/:age_range_id', isAdmin, decrease
 
 router.delete('/:id', isAdmin, deleteProduct);
 
+
 export default router;
